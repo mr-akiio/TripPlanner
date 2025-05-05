@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/notificationsFragment"
+        android:icon="@drawable/ic_notifications"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/addTripFragment"
+        android:icon="@drawable/ic_add_trip"
+        android:title="Add Trip" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+</menu>

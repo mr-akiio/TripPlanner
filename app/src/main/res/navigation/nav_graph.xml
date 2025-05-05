@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.agreditar.tripplanner.LoginFragment"
+        android:label="LoginFragment"
+        android:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.agreditar.tripplanner.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.agreditar.tripplanner.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_newTripFragment"
+            app:destination="@id/newTripFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_showTripFragment"
+            app:destination="@id/showTripFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTripFragment"
+        android:name="com.agreditar.tripplanner.NewTripFragment"
+        android:label="NewTripFragment" />
+    <fragment
+        android:id="@+id/showTripFragment"
+        android:name="com.agreditar.tripplanner.ShowTripFragment"
+        android:label="ShowTripFragment" >
+        <action
+            android:id="@+id/action_showTripFragment_to_payoutFragment"
+            app:destination="@id/payoutFragment" />
+        <action
+            android:id="@+id/action_showTripFragment_to_editTripFragment2"
+            app:destination="@id/editTripFragment2" />
+        <action
+            android:id="@+id/action_showTripFragment_to_planTripFragment"
+            app:destination="@id/planTripFragment" />
+        <action
+            android:id="@+id/action_showTripFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payoutFragment"
+        android:name="com.agreditar.tripplanner.PayoutFragment"
+        android:label="PayoutFragment" />
+    <fragment
+        android:id="@+id/editTripFragment2"
+        android:name="com.agreditar.tripplanner.EditTripFragment"
+        android:label="EditTripFragment" />
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.agreditar.tripplanner.FriendsFragment"
+        android:label="FriendsFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.agreditar.tripplanner.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planTripFragment"
+        android:name="com.agreditar.tripplanner.PlanTripFragment"
+        android:label="PlanTripFragment" />
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.agreditar.tripplanner.TransactionFragment"
+        android:label="TransactionFragment" />
+    <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment" />
+    <action android:id="@+id/action_global_loginFragment" app:destination="@id/loginFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.agreditar.tripplanner.SettingsFragment"
+        android:label="SettingsFragment" />
+
+</navigation>

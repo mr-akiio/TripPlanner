@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "820211850971",
+    "project_id": "tripplannerbackend-44d08",
+    "storage_bucket": "tripplannerbackend-44d08.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820211850971:android:8484a2f2b695238cbdf6fe",
+        "android_client_info": {
+          "package_name": "com.agreditar.tripplanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGZZdbzaJWs5Wc1ViJmjurUC_j2YsRGrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
